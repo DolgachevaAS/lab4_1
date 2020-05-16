@@ -1,5 +1,5 @@
-#ifndef HISTOGRAM_H_INCLUDED
-#define HISTOGRAM_H_INCLUDED
+#ifndef HISTOGRAM1_H_INCLUDED
+#define HISTOGRAM1_H_INCLUDED
 
 #include<vector>
 using namespace std;
