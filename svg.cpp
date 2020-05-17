@@ -43,7 +43,7 @@ void show_histogram_svg(const vector<size_t> bins, struct Input& Input)
     svg_begin(IMAGE_WIDTH, IMAGE_HEIGHT);
     double top = 0;
     unsigned max_count=0;
-    for (size_t b : bins) /* мы присваиваем значение количества элементов */
+    for (size_t b : bins) /* РјС‹ РїСЂРёСЃРІР°РёРІР°РµРј Р·РЅР°С‡РµРЅРёРµ РєРѕР»РёС‡РµСЃС‚РІР° СЌР»РµРјРµРЅС‚РѕРІ */
     {
         if(max_count<b)
             max_count=b;
@@ -51,8 +51,8 @@ void show_histogram_svg(const vector<size_t> bins, struct Input& Input)
     for (size_t bin : bins)
     {
         size_t height=30;
-        if(max_count>MAX_ASTERISK) /* Если количество будет больше 35, то уменьшаем масштаб*/
-            height=MAX_ASTERISK*((static_cast<double>(bin))/max_count); /* это для того,чтобы было дробное число , получаем, используя "static_cast<double>"*/
+        if(max_count>MAX_ASTERISK) /* Р•СЃР»Рё РєРѕР»РёС‡РµСЃС‚РІРѕ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ 35, С‚Рѕ СѓРјРµРЅСЊС€Р°РµРј РјР°СЃС€С‚Р°Р±*/
+            height=MAX_ASTERISK*((static_cast<double>(bin))/max_count); /* СЌС‚Рѕ РґР»СЏ С‚РѕРіРѕ,С‡С‚РѕР±С‹ Р±С‹Р»Рѕ РґСЂРѕР±РЅРѕРµ С‡РёСЃР»Рѕ , РїРѕР»СѓС‡Р°РµРј, РёСЃРїРѕР»СЊР·СѓСЏ "static_cast<double>"*/
         else
         {
             height=bin;
