@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
 #include <conio.h>
-#include<curl/curl.h>
+#include <curl/curl.h>
 #include <sstream>
 #include <string>
+#include "histogram1.h"
 #include "histogram.h"
 #include "svg.h"
 
